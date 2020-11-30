@@ -1,0 +1,64 @@
+def compara_assinatura(as_a, as_b):
+    calc = 0
+    func = 0
+    while func <= 5:
+        calc = calc + abs(as_a[func] - abs(as_b[func]))
+        func += 1
+        similaridade = calc / 6
+    print(similaridade)
+
+
+as_a = [5.571428571428571, 0.8253968253968254, 0.6984126984126984, 210.0, 4.5, 45.888888888888886]
+as_b = [4,79, 0,72, 0,56, 80,5, 2,5, 31,6]
+
+compara_assinatura(as_a,as_b)
+
+
+
+
+#    Lista_textos = []
+#    for texto in le_textos():
+#        assi_txt = calcula_assinatura(texto)
+#        Lista_textos.append(compara_assinatura(assi_txt, ass_cp))
+
+#    next_to = Lista_textos[0]
+#    resultado = 0
+
+#    for valor in range(1, len(Lista_textos)):
+#        if (next_to < Lista_textos[valor]):
+#            resultado = valor
+
+#    return ("O autor do texto {} está infectado com COH-PIAH", resultado)
+
+
+#textos = (le_textos())
+#ass_cp = [le_assinatura()]
+#avalia_textos(textos, ass_cp)
+
+
+MEU CODIGO
+
+def avalia_textos(textos, ass_cp):
+
+    each_texto = []
+    for elemento in le_textos():   #
+        each_assinatura = calcula_assinatura(texto)
+        each_texto.append(compara_assinatura(each_assinatura, ass_cp))
+    just_one = each_texto(0)
+    resultado = 0
+    for termo in range(1, len(each_texto)):
+        if (just_one < each_texto[termo]):
+            resultado = termo
+    return resultado
+
+
+
+
+
+
+
+
+
+
+
+
